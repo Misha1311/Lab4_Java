@@ -32,7 +32,8 @@ public class Main {
         }
 
         Mobile mobile = new Mobile();
-
+        
+        mobile.setStatus((boolean) obj.get("status"));
         for (Object jsonObject : jsonArray) {
             JSONObject current = (JSONObject) jsonObject;
             String brandName = (String) current.get("brand_name");
